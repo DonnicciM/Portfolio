@@ -14,7 +14,8 @@ body {
 
 /* Header & Navigation */
 header {
-    background-color: #333;
+    background-color: #333; /* fallback */
+    background-image: linear-gradient(90deg, #3a3a3a 0%, #2b2b2b 50%, #1f1f1f 100%);
     color: #fff;
     padding: 1rem 0;
     position: fixed;
