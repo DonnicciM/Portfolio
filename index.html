@@ -36,10 +36,13 @@
         </section>
 
         <section id="about">
-            <h2>About Me</h2>
-            <p>
-                Master of Business and Technology candidate with a strong foundation in Digital Enterprise Systems. Experienced in cross-functional internships across manufacturing, logistics, operations, and IT, delivering data-driven solutions and process improvements. Passionate about product and project management and operational excellence.
-            </p>
+    <h2>About Me</h2>
+    <div class="about-container">
+        <img src="images/headshot.jpg" alt="A professional headshot of Donnicci Marshall" class="profile-pic">
+                 <p>
+                    Master of Business and Technology candidate with a strong foundation in Digital Enterprise Systems. Experienced in cross-functional internships across manufacturing, logistics, operations, and IT, delivering data-driven solutions and process improvements. Passionate about product and project management and operational excellence.
+                </p>
+            </div>
         </section>
 
         <section id="experience">
@@ -104,6 +107,23 @@
             <p>Email: <a href="mailto:marsh156@purdue.edu">marsh156@purdue.edu</a></p>
             <p>Phone: <a href="tel:219-413-6939">219-413-6939</a></p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/donnicci" target="_blank">linkedin.com/in/donnicci</a></p>
+            
+            <div class="contact-form-container">
+                <h3>Send me a message</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                <div id="formMessage" class="form-message"></div>
+            </div>
         </section>
     </main>
 
