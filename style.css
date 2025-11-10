@@ -208,42 +208,32 @@ ul {
 
 /* Awards Section */
 .awards-container {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: stretch;
-    margin: 1.5rem auto 0 auto;
-    max-width: 700px; /* keep them on one row on desktop */
+        display: flex;
+        gap: 1rem;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: stretch;
+        margin: 1.5rem auto 0 auto;
+        max-width: 900px; /* allow two half-width cards in a row */
 }
 
+/* Reuse edu-item visuals; adjust sizing for half-width */
 .award-item {
-    flex: 1 1 300px;
-    min-width: 250px;
-    max-width: 320px;
-    padding: 1rem 1.5rem;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
+        flex: 1 1 40%;
+        max-width: 420px; /* roughly half of the row width accounting for gap */
 }
 
-.award-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(220, 20, 60, 0.3);
+.award-item h3 {
+        color: #dc143c;
 }
 
-.award-item h4 {
-    color: #dc143c;
-    margin: 0;
-    font-size: 1.1rem;
-}
-
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 900px) {
     .awards-container {
-        flex-wrap: wrap; /* stack on small screens */
+        flex-wrap: wrap; /* stack on smaller screens */
+        max-width: 100%;
+    }
+    .award-item {
+        flex: 1 1 100%;
         max-width: 100%;
     }
 }
