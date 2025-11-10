@@ -250,6 +250,20 @@ ul {
     height: 100%;
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
 }
+.award-icon-svg {
+    animation: medal-float 6s ease-in-out infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes medal-float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .award-icon-svg { animation: none; }
+}
 .award-item h3 {
     display: flex;
     align-items: center;
