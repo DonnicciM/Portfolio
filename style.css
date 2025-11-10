@@ -143,7 +143,7 @@ ul {
     padding: 0;
 }
 
-#leadership ul li {
+#leadership > ul > li {
     margin-bottom: 1.5rem;
     padding: 1.5rem;
     background: white;
@@ -153,9 +153,39 @@ ul {
     cursor: pointer;
 }
 
-#leadership ul li:hover {
+#leadership > ul > li:hover {
     transform: scale(1.03);
     box-shadow: 0 8px 20px rgba(220, 20, 60, 0.3);
+}
+
+#leadership h3 {
+    color: #dc143c;
+    margin-bottom: 0.5rem;
+}
+
+#leadership .position {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+#leadership .responsibilities {
+    list-style-position: inside;
+    padding-left: 20px;
+}
+
+#leadership .responsibilities li {
+    margin-bottom: 0.5rem;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    transition: none;
+    cursor: default;
+}
+
+#leadership .responsibilities li:hover {
+    transform: none;
+    box-shadow: none;
 }
 
 /* Education Section */
