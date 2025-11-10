@@ -9,7 +9,8 @@
 :root {
     --grey-900: #1f1f1f; /* darkest */
     --grey-800: #2b2b2b;
-    --grey-700: #3a3a3a; /* lightest in header/nav gradient */
+    --grey-700: #3a3a3a;
+    --grey-600: #4a4a4a; /* lighter end for more contrast */
 }
 
 body {
@@ -22,7 +23,7 @@ body {
 /* Header & Navigation */
 header {
     background-color: var(--grey-900); /* fallback */
-    background-image: linear-gradient(90deg, var(--grey-900) 0%, var(--grey-800) 50%, var(--grey-700) 100%);
+    background-image: linear-gradient(90deg, var(--grey-900) 0%, var(--grey-800) 50%, var(--grey-600) 100%);
     color: #fff;
     padding: 1rem 0;
     position: fixed;
@@ -334,7 +335,7 @@ footer {
         height: 92vh;
         top: 8vh;
         background-color: var(--grey-900); /* fallback */
-        background-image: linear-gradient(90deg, var(--grey-900) 0%, var(--grey-800) 50%, var(--grey-700) 100%);
+        background-image: linear-gradient(90deg, var(--grey-900) 0%, var(--grey-800) 50%, var(--grey-600) 100%);
         display: flex;
         flex-direction: column;
         align-items: center;
