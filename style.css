@@ -205,6 +205,39 @@ ul {
 }
 
 .edu-item h3 {
+
+/* Awards Section */
+.awards-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.award-item {
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+    padding: 1rem 1.5rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.award-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(220, 20, 60, 0.3);
+}
+
+.award-item h4 {
+    color: #dc143c;
+    margin: 0;
+    font-size: 1.1rem;
+}
     color: #dc143c;
     margin-bottom: 0.5rem;
 }
