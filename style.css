@@ -210,15 +210,17 @@ ul {
 .awards-container {
     display: flex;
     gap: 1rem;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
-    margin-top: 2rem;
+    align-items: stretch;
+    margin: 1.5rem auto 0 auto;
+    max-width: 700px; /* keep them on one row on desktop */
 }
 
 .award-item {
-    flex: 1;
-    min-width: 200px;
-    max-width: 300px;
+    flex: 1 1 300px;
+    min-width: 250px;
+    max-width: 320px;
     padding: 1rem 1.5rem;
     background: white;
     border-radius: 10px;
@@ -237,6 +239,13 @@ ul {
     color: #dc143c;
     margin: 0;
     font-size: 1.1rem;
+}
+
+@media screen and (max-width: 640px) {
+    .awards-container {
+        flex-wrap: wrap; /* stack on small screens */
+        max-width: 100%;
+    }
 }
     color: #dc143c;
     margin-bottom: 0.5rem;
